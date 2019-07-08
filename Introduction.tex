@@ -1,0 +1,27 @@
+\documentclass[11pt letterpaper]{article}
+\usepackage[left=12mm, top=0.1in]{geometry}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\newcommand{\risingfactorial}[1]{%
+  ^{\overline{#1}}%
+}
+\begin{document}
+\title{\textbf{Liouville Constant (c)}}
+\maketitle
+\section{Introduction}
+Liouville's constant, also called Liouville's number, is the real number defined by\\ 
+$$c=\sum_{n=1}^\infty 10\risingfactorial{-n}=0.1100001000000000000000001…$$\\
+Liouville constant or number is "almost rational", and can thus be approximated "quite closely" by sequences of rational numbers.All Liouville numbers are transcendental numbers—that is, numbers that cannot be expressed as the solution (root) of a polynomial equation with integer coefficients. Liouville's constant is named after the mathematician \textbf{Joseph Liouville}, who showed the world, first proved  transcendental number(Liouville’s constant), in 1850.
+
+\section{Proof}
+Let $$q=10\risingfactorial{n}$$ and:\\
+$$c=p/q+\sum_{k=n+1}^\infty1/10\risingfactorial{k}$$\\
+$$\mid c-p/q \mid=\sum_{k=n+1}^\infty1/10\risingfactorial{k}$$\\
+$$<=2/10\risingfactorial{n+1}$$\\
+$$=2/q^{n+1}$$\\
+$$<1/q^{n}$$\\
+Thus, by definition, \textbf{c} is a \textbf{Liouville number}. 
+ 
+\section{Characteristics}
+Liouville's constant is a decimal fraction with a 1 in each decimal place corresponding to a factorial n!, and zeros everywhere else. In layman terms it is an island of 1's separated by 0’s.
+\end{document}
